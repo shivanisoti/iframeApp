@@ -8,7 +8,7 @@ const ChildApp = () => {
     window.myFunctionInIframe = () => {
       console.log('Function in iframe called');
       // Send a message back to the parent indicating that the function was executed
-      window.parent.postMessage('FunctionExecuted', 'http://localhost:3000');
+      window.parent.postMessage('FunctionExecuted', 'https://parent-app-phi.vercel.app');
     };
 
     // Listen for messages from the parent
